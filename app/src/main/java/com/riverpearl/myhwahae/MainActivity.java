@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        String labelHome = getResources().getString(R.string.title_review);
+        String labelHome = getResources().getString(R.string.title_home);
         String labelReview = getResources().getString(R.string.title_review);
         String labelIngredient = getResources().getString(R.string.title_ingredient);
         String labelHwaple = getResources().getString(R.string.title_hwaple);
