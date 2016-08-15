@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_text_size">20dp</dimen>
+    <dimen name="image_progile_width">80dp</dimen>
+    <dimen name="image_profile_height">80dp</dimen>
+    <dimen name="text_like_left_margin">10dp</dimen>
+    <dimen name="text_like_right_margin">10dp</dimen>
+    <dimen name="btn_mypage_margin">30dp</dimen>
+    <dimen name="mypage_profile_image_top_margin">30dp</dimen>
+    <dimen name="mypage_profile_image_bottom_margin">10dp</dimen>
+    <dimen name="mypage_linear_top_margin">10dp</dimen>
+    <dimen name="mypage_linear_bottom_margin">10dp</dimen>
+    <dimen name="mypage_buttons_bottom_margin">20dp</dimen>
+    <dimen name="mypage_grid_padding">5dp</dimen>
+    <dimen name="mypage_grid_left_padding">20dp</dimen>
+    <dimen name="mypage_grid_content_padding">20dp</dimen>
+</resources>
