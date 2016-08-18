@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/home_list_padding">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/home_list_padding"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/home_about_icon_width"
+            android:layout_height="@dimen/home_about_icon_height" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/img_detail"
+            android:layout_width="@dimen/home_about_icon_width"
+            android:layout_height="@dimen/home_about_icon_width"
+            android:src="@drawable/abc_ic_go_search_api_material" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout"
+        android:text="desc"
+        android:textSize="@dimen/home_about_text_desc_size"/>
+
+</RelativeLayout>
+
+

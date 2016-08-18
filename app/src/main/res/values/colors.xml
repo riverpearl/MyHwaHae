@@ -6,6 +6,8 @@
     <color name="colorMain">#64D2D2</color>
     <color name="colorSub">#EBEBEB</color>
     <color name="colorMainText">#ffffff</color>
+    <color name="colorCosmeticBrandText">#808080</color>
+    <color name="colorCosmeticNameText">#585858</color>
     <color name="colorRed">#ff0000</color>
     <color name="colorBlack">#000000</color>
 </resources>

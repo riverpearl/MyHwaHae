@@ -5,12 +5,17 @@ import android.support.v4.app.FragmentTabHost;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.tabhost)
     FragmentTabHost tabHost;
+
+    @BindView(R.id.text_keyword)
+    TextView keywordView;
 
     public final static String TAG_HOME = "home";
     public final static String TAG_REVIEW = "review";
@@ -47,19 +55,29 @@ public class MainActivity extends AppCompatActivity {
         tabHost.addTab(tabHost.newTabSpec(TAG_HWAPLE).setIndicator(labelHwaple), IngredientFragment.class, null);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
+    @OnClick(R.id.img_logo)
+    public void onLogoClick(View view) {
+        tabHost.setCurrentTabByTag(TAG_HOME);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.menu_mypage) {
-            Intent intent = new Intent(MainActivity.this, MypageActivity.class);
-            startActivity(intent);
+    @OnClick(R.id.img_mypage)
+    public void onMyPageClick(View view) {
+        Intent intent = new Intent(MainActivity.this, MypageActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.img_search)
+    public void onSearchClick(View view) {
+        String keyword = keywordView.getText().toString();
+
+        if (!TextUtils.isEmpty(keyword)) {
+            //상품상세
         }
 
-        return super.onOptionsItemSelected(item);
+    }
+
+    @OnClick(R.id.text_keyword)
+    public void onKeywordClick(View view) {
+        //검색창
     }
 }
